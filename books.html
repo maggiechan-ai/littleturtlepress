@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books — Little Turtle Press 🐢</title>
+  <meta name="description" content="Browse the Read & Play book series. Real wildlife photography paired with figurine play for ages 0-3. Over 40 titles planned across Safari, Farm, Bears, and more.">
+  <meta property="og:title" content="Read & Play Books — Little Turtle Press">
+  <meta property="og:description" content="Browse the Read & Play book series. Real wildlife photography paired with figurine play for ages 0-3.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://littleturtlepress.com/books">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐢</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="turtle">🐢</span> Little Turtle Press</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html" class="active">Books</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://amazon.com" class="btn btn-primary btn-small" target="_blank">Shop on Amazon</a></li>
+        </ul>
+        <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="padding: 80px 0 40px;">
+    <div class="container">
+      <h1 class="fade-in">The Read & Play Collection</h1>
+      <p class="tagline fade-in">Real wildlife photography. Figurine-ready. Research-backed. Every book is designed to help your child see it, hold it, and learn it.</p>
+    </div>
+  </section>
+
+  <!-- Book Info Bar -->
+  <section class="section" style="padding: 40px 0 0;">
+    <div class="container">
+      <div style="background: var(--cream); border-radius: var(--radius-lg); padding: 32px 40px; display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; text-align: center; margin-bottom: 40px;" class="fade-in">
+        <div><strong style="font-family: 'Nunito', sans-serif; font-size: 1.1rem;">📖 24 Pages</strong><br><span style="font-size: 0.85rem; color: var(--soft-brown);">Per book</span></div>
+        <div><strong style="font-family: 'Nunito', sans-serif; font-size: 1.1rem;">📸 15 Photos</strong><br><span style="font-size: 0.85rem; color: var(--soft-brown);">Real wildlife</span></div>
+        <div><strong style="font-family: 'Nunito', sans-serif; font-size: 1.1rem;">🧒 Ages 0–3</strong><br><span style="font-size: 0.85rem; color: var(--soft-brown);">Baby & Toddler tiers</span></div>
+        <div><strong style="font-family: 'Nunito', sans-serif; font-size: 1.1rem;">📐 21×21cm</strong><br><span style="font-size: 0.85rem; color: var(--soft-brown);">Perfect size</span></div>
+        <div><strong style="font-family: 'Nunito', sans-serif; font-size: 1.1rem;">💰 $9.99</strong><br><span style="font-size: 0.85rem; color: var(--soft-brown);">Each on Amazon</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters + Books -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">All Animals</button>
+        <button class="filter-btn" data-filter="safari">🦁 Safari</button>
+        <button class="filter-btn" data-filter="farm">🐄 Farm</button>
+        <button class="filter-btn" data-filter="bears">🐻 Bears</button>
+        <button class="filter-btn" data-filter="australian">🐨 Australian</button>
+        <button class="filter-btn" data-filter="woodland">🌲 Woodland</button>
+        <button class="filter-btn" data-filter="birds">🐦 Birds</button>
+        <button class="filter-btn" data-filter="dinosaurs">🦕 Dinosaurs</button>
+      </div>
+
+      <div class="books-grid" id="booksGrid">
+        <!-- Books will be rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Inside -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>What's Inside Every Book</h2>
+        <p>Each Read & Play book follows our research-backed format.</p>
+      </div>
+      <div class="usp-grid">
+        <div class="usp-card fade-in">
+          <div class="usp-icon">📸</div>
+          <div>
+            <h3>15 Photo Pages</h3>
+            <p>Professional wildlife photography showing the animal in its natural habitat — hunting, playing, sleeping, feeding.</p>
+          </div>
+        </div>
+        <div class="usp-card fade-in">
+          <div class="usp-icon">📝</div>
+          <div>
+            <h3>Vocabulary Building</h3>
+            <p>Age-appropriate words introduced naturally with repetition throughout the book to build lasting word knowledge.</p>
+          </div>
+        </div>
+        <div class="usp-card fade-in">
+          <div class="usp-icon">🌟</div>
+          <div>
+            <h3>Fun Facts</h3>
+            <p>Fascinating animal facts woven into every spread — sparking curiosity and encouraging questions.</p>
+          </div>
+        </div>
+        <div class="usp-card fade-in">
+          <div class="usp-icon">👨‍👩‍👧</div>
+          <div>
+            <h3>Parent Reading Notes</h3>
+            <p>PEER method prompts and reading tips so caregivers can turn every page into a conversation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span class="turtle">🐢</span> Little Turtle Press</div>
+        <p>Read it. Hold it. Learn it.<br>Research-backed books for little explorers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="books.html">All Books</a></li>
+          <li><a href="https://amazon.com" target="_blank">Amazon Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="mailto:hello@littleturtlepress.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Little Turtle Press. All rights reserved. 🐢</div>
+  </footer>
+
+  <script>
+    const books = [
+      { name: 'Lion', emoji: '🦁', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: true },
+      { name: 'Giraffe', emoji: '🦒', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Elephant', emoji: '🐘', series: 'safari', seriesName: 'Safari Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Tiger', emoji: '🐅', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Rhinoceros', emoji: '🦏', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Hippo', emoji: '🦛', series: 'safari', seriesName: 'Safari Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Cheetah', emoji: '🐆', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Leopard', emoji: '🐆', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Gorilla', emoji: '🦍', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Monkey', emoji: '🐒', series: 'safari', seriesName: 'Safari Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Crocodile', emoji: '🐊', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Alligator', emoji: '🐊', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Panda', emoji: '🐼', series: 'safari', seriesName: 'Safari Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Red Panda', emoji: '🔴🐼', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Camel', emoji: '🐪', series: 'safari', seriesName: 'Safari Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Cow', emoji: '🐄', series: 'farm', seriesName: 'Farm Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Sheep', emoji: '🐑', series: 'farm', seriesName: 'Farm Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Horse', emoji: '🐴', series: 'farm', seriesName: 'Farm Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Donkey', emoji: '🫏', series: 'farm', seriesName: 'Farm Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Chicken', emoji: '🐔', series: 'farm', seriesName: 'Farm Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Rooster', emoji: '🐓', series: 'farm', seriesName: 'Farm Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Goose', emoji: '🪿', series: 'farm', seriesName: 'Farm Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Cat', emoji: '🐱', series: 'farm', seriesName: 'Farm Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Black Bear', emoji: '🐻', series: 'bears', seriesName: 'Bears', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Polar Bear', emoji: '🐻‍❄️', series: 'bears', seriesName: 'Bears', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Brown Bear', emoji: '🐻', series: 'bears', seriesName: 'Bears', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Koala', emoji: '🐨', series: 'australian', seriesName: 'Australian Animals', tier: 'Baby 6–18m', available: false },
+      { name: 'Platypus', emoji: '🦆', series: 'australian', seriesName: 'Australian Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Echidna', emoji: '🦔', series: 'australian', seriesName: 'Australian Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Kangaroo', emoji: '🦘', series: 'australian', seriesName: 'Australian Animals', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Hedgehog', emoji: '🦔', series: 'woodland', seriesName: 'Woodland', tier: 'Baby 6–18m', available: false },
+      { name: 'Raccoon', emoji: '🦝', series: 'woodland', seriesName: 'Woodland', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Beaver', emoji: '🦫', series: 'woodland', seriesName: 'Woodland', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Parrot', emoji: '🦜', series: 'birds', seriesName: 'Birds', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Penguin', emoji: '🐧', series: 'birds', seriesName: 'Birds', tier: 'Baby 6–18m', available: false },
+      { name: 'Toucan', emoji: '🦜', series: 'birds', seriesName: 'Birds', tier: 'Toddler 18m–3y', available: false },
+      { name: 'Triceratops', emoji: '🦕', series: 'dinosaurs', seriesName: 'Dinosaurs', tier: 'Toddler 18m–3y', available: false },
+    ];
+
+    function renderBooks(filter) {
+      const grid = document.getElementById('booksGrid');
+      const filtered = filter === 'all' ? books : books.filter(b => b.series === filter);
+      grid.innerHTML = filtered.map(b => `
+        <div class="book-card fade-in visible" data-series="${b.series}">
+          <div class="card-cover" style="background: linear-gradient(135deg, ${b.available ? '#FDF6EC' : '#F5F0EB'}, ${b.available ? '#F5F0EB' : '#E8E3DE'});">
+            <span style="font-size: 4rem;">${b.emoji}</span>
+            ${b.available
+              ? '<span class="card-badge badge badge-gold">Available Now</span>'
+              : '<span class="card-badge badge badge-grey">Coming Soon</span>'}
+          </div>
+          <div class="card-body">
+            <h3>${b.name}</h3>
+            <div class="card-series">${b.seriesName}</div>
+            <div class="card-tier">📗 ${b.tier}</div>
+            <ul class="card-features">
+              <li>15 wildlife photo pages</li>
+              <li>Vocabulary & fun facts</li>
+              <li>Parent reading notes</li>
+            </ul>
+            <div class="card-footer">
+              <span class="card-price">$9.99</span>
+              ${b.available
+                ? '<a href="https://amazon.com" class="btn btn-primary btn-small" target="_blank">Buy on Amazon</a>'
+                : '<span class="badge badge-grey">Coming Soon</span>'}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Filter buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderBooks(btn.dataset.filter);
+      });
+    });
+
+    // Initial render
+    renderBooks('all');
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
